@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" 
+	template="/pages/template.xhtml">
+
+	<ui:define name="contenido">
+
+		<div class="hero-unit">
+			<h1>SISTEMA DE INFORMACION PERSONAL</h1>
+			<h2>Universidad Nacional Mayor de San Marcos </h2>
+			<p>
+				<a class="btn btn-large btn-primary" href="#myModal" role="button" data-toggle="modal">
+				 Iniciar Sesión 
+				</a>
+			</p>
+		</div>
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span4">
+					<img alt="" src="../../img/logo.jpg" />
+				</div>
+				<div class="span8">
+					 <h1>
+						Proyecto Quipucamayoc
+					</h1>
+					<p>
+						La visión del Sistema de Información Personal es de proporcionarle información relacionada a usted
+						, en base a los procesos automatizados en los distintos módulos de Quipucamayoc, tales como :
+					</p>
+					<div class="row-fluid">
+						<div class="span1">
+							<h1><img alt="" src="../../img/q.ico" /></h1>
+						</div>
+						<div class="span7">
+							<h1><small>Registro de Asistencia</small></h1>
+							Información de las asistencias diarias de ingreso y salida, tardanzas y horas extras
+						</div>
+					</div>
+					<br/>
+					<div class="row-fluid">
+						<div class="span1">
+							<h1><img alt="" src="../../img/q.ico" /></h1>
+						</div>
+						<div class="span7">
+							<h1><small>Registro de Legajos</small></h1>
+							Información de los datos personales y laborales
+						</div>
+					</div>
+					<br/>
+					<div class="row-fluid">
+						<div class="span1">
+							<h1><img alt="" src="../../img/q.ico" /></h1>
+						</div>
+						<div class="span7">
+							<h1><small>Elaboración de planillas</small></h1>
+							Información de las distintas planillas elboradas por la OGRRHH
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<p:growl id="growl" showDetail="true" sticky="true" />
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog"
+			aria-labelledby="myModalLabel" aria-hidden="true" style="max-width:460px;">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true">×</button>
+				<h3 id="myModalLabel">Inicio de sesión</h3>
+			</div>
+			<div class="modal-body">
+				<div id="login">
+					<h:form prependId="false">
+						<p:panel>
+							<p:panelGrid columns="1">
+								<div id="mesDataIn" class="alert alert-error">
+					                <strong>A Ocurrido un error!</strong> 
+					                Datos de usuario no validos.
+					            </div>
+								<h:outputText value="Nombre de Usuario : *" />
+								<p:inputText id="user" required="true"
+									value="#{authenticationManaged.user}"
+									requiredMessage="usuario requerido" />
+								<p:message for="user" id="userm">
+								</p:message>
+								<h:outputText value="Contraseña : *" />
+								<p:password id="password" required="true"
+									value="#{authenticationManaged.password}"
+									requiredMessage="contraseña requerida" />
+								<p:message for="password" id="passwordm">
+								</p:message>
+							</p:panelGrid>
+							<p:panelGrid columns="3">
+								<h:outputText value="Recordar sesión: " />
+								<p:selectBooleanCheckbox
+									value="#{authenticationManaged.rememberMe}">
+								</p:selectBooleanCheckbox>
+								<p:commandButton id="loginb" icon="ui-icon-person" value="Iniciar Sesión"
+									action="#{authenticationManaged.login}"
+									update="userm, passwordm"
+									oncomplete="handleRequest(xhr, status, args);" />
+							</p:panelGrid>
+							<script>
+								$('[id$="mesDataIn"]').hide();
+								$('[id$="loginb"]').css({
+									'margin' : '0 0 0 100px',
+									'width':'115px'
+								});
+								function handleRequest(xhr, status, args){
+									if(args.ok){
+										console.log(args.ok);
+										$('[id$="mesDataIn"]').show();		
+									}else{
+										console.log(args.ok);
+										$('[id$="mesDataIn"]').hide();
+									}
+								}
+								
+							</script>
+						</p:panel>						
+					</h:form>
+				</div>
+			</div>
+		</div>
+
+<!-- 
+		<script>
+			var lad = ($(window).width() - 400 )/2;
+			var alt = ($(window).height() - $('[id$="login"]').height())/2;
+			$('[id$="login"]').css({'width':'400px','padding':'0 0 0 '+lad+'px'});
+		</script>
+-->
+	</ui:define>
+	
+</ui:composition>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  
+    xmlns:h="http://java.sun.com/jsf/html"  
+    xmlns:f="http://java.sun.com/jsf/core"  
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:jsf="http://xmlns.jcp.org/jsf"
+    xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+     >  
+     
+   
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<title><ui:insert name="titulo"/></title>		
+		<meta content="IBM Software Development Platform" name="GENERATOR" />
+	    <meta content="text/css" http-equiv="Content-Style-Type" />
+	    <meta content="no-cache" http-equiv="Cache-Control" />
+	    <meta content="no-store" http-equiv="Cache-Control" />
+	    <meta content="must-revalidate" http-equiv="Cache-Control" />
+	    <meta content="no-cache" http-equiv="Pragma" />
+	    <meta content="0" http-equiv="Expires" />
+	    
+	     <link title="Style" href="../../theme/default.css" type="text/css" rel="stylesheet" />
+	    <link title="Style" href="../../theme/table.css" type="text/css" rel="stylesheet" />
+	    <link title="Style" href="../../theme/menu.css" type="text/css" rel="stylesheet" />
+	    <link title="Style" href="../../theme/22estilo.css" type="text/css" rel="stylesheet" />
+	    <link href="../../theme/estilo.css" rel="stylesheet" type="text/css" />
+	    
+	 	 <link rel="stylesheet" href="../../css/bootstrap.css"/>
+		<link rel="stylesheet" href="../../css/estilos.css"/>	
+		
+		<h:outputScript library="primefaces" name="jquery/jquery.js"/>
+		<script src="../../js/bootstrap.js"/>
+        <script src="../../js/menu.js"/>
+    
+        
+        
+	</h:head>
+	
+	<h:body style="background-color:#FFFFFF;margin:center 0;">	
+	
+	 <div class="col-lg-12" style="width: 1300px;background-color:#FFFFFF;border: 1px solid #ACBECE;">
+		<div id="Cabecera">
+			<tr>
+               <td valign="top" align="left" id="Cabecera">
+                   <a style="color:white; text-decoration: none;font-size: 11px" href="#">Pagina Inicio </a>
+               </td>
+            </tr>
+		</div>
+		<div id="encabesado">
+            <ui:include src="../WEB-INF/facelets/templates/encabesadoBBVA.xhtml"/>
+		</div>
+		<div id="menu">
+			<ui:include src="../WEB-INF/facelets/templates/menuBBVA.xhtml"/>
+		</div>
+		<div class="col-lg-12" id="cuerpo">
+				<div class="row">				
+						<ui:insert name="cuerpo"/>
+				</div>
+		</div>
+		<div id="Pie" >
+			<tr>
+               <td valign="top" align="center" class="dr-pnl-h rich-panel-header" style="font-size: 11px" id="Pie">
+               ..:: BBVA Banco Continental ©Copyright -Todos los Derechos Reservados ::.. V.144 26/09/2014
+               </td>
+            </tr>
+		</div>	
+	 </div>
+	</h:body>
+
+</html>

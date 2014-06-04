@@ -1,0 +1,141 @@
+<html xmlns="http://www.w3.org/1999/xhtml"  
+    xmlns:h="http://java.sun.com/jsf/html"  
+    xmlns:f="http://java.sun.com/jsf/core"  
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://java.sun.com/jsf/facelets">  
+ 
+	<ui:composition template="../plantillaGeneral.xhtml">
+	  
+	  
+		<ui:define name="titulo">
+			CASOS PENDIENTES POR ANALISTA
+		</ui:define>
+		<ui:define name="cuerpo">	
+		<h:form  id="frmPrincipal">
+			<tr>
+              <td>
+                <table width="100%" height="25" cellspacing="0" cellpadding="0"
+                  border="0" id="formPrincipal:j_id29" class="rich-toolbar toolBar">
+                  <tbody>
+                    <tr valign="middle">
+                      <td class="rich-toolbar-item  textoTituloPagina" style="padding:3px;">CASOS PENDIENTES POR ANALISTA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <div class="panel panel-info"   >
+			    	<div class="panel-heading">Busqueda</div>
+  					<div class="panel-body">
+  						  <div class="row">
+		  						<h:panelGrid columns="3" style="margin-bottom:10px" cellpadding="5">
+		  							 <h:panelGrid>
+		  							 <h:outputText value="Analista de Casos" />
+		  							 </h:panelGrid>
+								      <h:panelGrid>
+													<p:selectOneMenu id="Analista" value="">  
+							                			<f:selectItem itemLabel="TODOS" itemValue="" />   		                						
+							                			 <f:selectItems value="" />     
+							            			</p:selectOneMenu>
+								    </h:panelGrid>
+								   <h:panelGrid>
+		  							<p:commandButton value="Buscar"   action="#" update=":frmPrincipal"  />
+		  						   </h:panelGrid>	
+								</h:panelGrid>	
+						   </div>
+						    <div class="row">
+							     <h:panelGrid columns="7" style="margin-bottom:10px" cellpadding="5">							        
+								        <h:outputText value="Numero Alerta" />
+									    <p:inputText />
+									    
+									    <h:outputText value="Numero Casos" />
+									   <p:inputText />
+									  
+									   <h:outputText value="Invoucrado" />
+									   <p:inputText />
+									   
+									   <p:commandButton value="Buscar"   action="#" update=":frmPrincipal"  />								   
+								  </h:panelGrid> 
+						    </div>
+  				   </div>
+			</div>    			  
+            <div class="panel panel-info"   >
+			    	<div class="panel-heading">Resultados De Busqueda</div>
+  					<div class="panel-body">
+  							<div class="row">
+								<p:dataTable id="cars1" var="caja" value="#{controllerEjemplo.modeloejemplos}" style="margin-bottom:20px ;" >
+								   <!-- 
+								    <p:ajax event="rowEdit" listener="#{dtEditView.onRowEdit}" update=":form:msgs" />
+								    <p:ajax event="rowEditCancel" listener="#{dtEditView.onRowCancel}" update=":form:msgs" />
+									 -->  
+									<p:column headerText="Numero Alerta" >  
+									    <h:outputText value="#{caja.codigo}"   />  
+									</p:column> 
+								 	<p:column headerText="Numero Caso"  >  
+										<h:outputText value="#{caja.codigo}"   />  
+									</p:column> 
+									<p:column headerText="Fecha Inicio Alerta"  >  
+										<h:outputText value="#{caja.codigo}"   />  
+									</p:column>
+									<p:column headerText="Fecha Inicio Caso"  >  
+										<h:outputText value="#{caja.codigo}"   />  
+									</p:column> 
+									<p:column headerText="Nombre"  >  
+											<h:outputText value="#{caja.codigo}"   />  
+										</p:column> 
+									<p:column headerText="ROS"  >  
+											<h:outputText value="#{caja.codigo}"   />  
+										</p:column> 
+									<p:column headerText="Cierre"  >  
+											<h:outputText value="#{caja.codigo}"   />  
+									</p:column> 
+									<p:column headerText="Marca"  >  
+											<h:outputText value="#{caja.codigo}"   />  
+									</p:column> 									
+									 <p:column headerText="Actividad Inusual">
+								           <p:cellEditor>
+								               <f:facet name="output"><h:outputText value="#{caja.codigo}" /></f:facet>
+								               <f:facet name="input"><p:inputText value="#{caja.codigo}" style="width:96%" label="Year"/></f:facet>
+								           </p:cellEditor>
+								       </p:column>
+								    
+									 <p:column headerText="Actiguedad">
+								           <p:cellEditor>
+								               <f:facet name="output"><h:outputText value="#{caja.codigo}" /></f:facet>
+								               <f:facet name="input"><p:inputText value="#{caja.codigo}" style="width:96%" label="Year"/></f:facet>
+								           </p:cellEditor>
+								       </p:column>
+								    
+									 <p:column headerText="Edad">
+								           <p:cellEditor>
+								               <f:facet name="output"><h:outputText value="#{car.year}" /></f:facet>
+								               <f:facet name="input"><p:inputText value="#{car.year}" style="width:96%" label="Year"/></f:facet>
+								           </p:cellEditor>
+								       </p:column>
+								       <p:column headerText="Monto Acumulado">
+								           <p:cellEditor>
+								               <f:facet name="output"><h:outputText value="#{caja.codigo}" /></f:facet>
+								               <f:facet name="input"><p:inputText value="#{caja.codigo}" style="width:96%" label="Year"/></f:facet>
+								           </p:cellEditor>
+								       </p:column>
+								       <p:column headerText="Color">
+								           <p:cellEditor>
+								               <f:facet name="output"><h:outputText value="#{caja.codigo}" /></f:facet>
+								              <!--  <f:facet name="input">
+								                   <h:selectOneMenu value="#{car.color}" style="width:100%">
+								                       <f:selectItems value="#{dtEditView.colors}" var="color" itemLabel="#{color}" itemValue="#{color}" />
+								                   </h:selectOneMenu>
+								               </f:facet> -->
+								           </p:cellEditor>
+								       </p:column>
+								       <p:column headerText="Guardar" >
+								           <p:rowEditor />
+								       </p:column>
+								   </p:dataTable> 
+  							</div>  				   
+  				   </div>
+			</div>   
+			</h:form>     
+		</ui:define>	
+	</ui:composition>
+</html>

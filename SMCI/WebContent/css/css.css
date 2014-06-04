@@ -1,0 +1,45 @@
+body {
+	font-size: 12px;
+	font-style: Verdana;
+}
+
+.hero-unit {
+	background-color: #9CA9D1;
+}
+
+td.ui-widget-header {
+	background-color: #f5f5f5;
+	min-width: 160px;
+}
+
+.ui-widget-header {
+	background-color: #9CA9D1;
+}
+
+thead {
+	width: 25%;
+}
+
+tbody {
+	vertical-align: middle;
+}
+
+.ui-widget {
+	font-size: 12px;
+}
+
+.ui-panelgrid tr,.ui-panelgrid td {
+	border: none;
+	vertical-align: top;
+}
+
+.ui-datatable-data,.ui-datatable th {
+	font-size: 12px;
+}
+.columnita{
+	text-align: right;
+}
+.ui-widget-overlay {
+	background: #ffffff;
+	opacity:.80;
+}

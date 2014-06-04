@@ -1,0 +1,544 @@
+html{
+		
+	height: 100%;
+	width: 100%;
+	
+	/*
+	height: 768px;
+	width: 1024px;
+	*/
+}
+
+.msgsErrorLogin{	
+	border: 1px solid;
+	border-color: #FFBABA;	
+	margin: 0 5px;
+	padding: 1px 4px;
+	padding: 0px 4px;	
+	background-color: #FFBABA;
+	color: #D8000C;	
+}
+a{
+	text-decoration: none;
+}
+body
+{
+	background-image: url(../imagenes/banner/fondopagina.gif);
+	background-position: top;
+	font-size: 11px;
+	font-family: Trebuchet MS, Tahoma, Verdana, Arial;
+	margin-left: 10px;
+	margin-t: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.bg{
+	background-image: url(../imagenes/fondos/header_table.gif);
+}
+
+#login{
+	/*MARGIN-TOP:40px;*/ 
+	BACKGROUND-COLOR: white;
+	border: 2px solid #888;
+}
+.tabla{
+	BACKGROUND-COLOR: white;
+	
+}
+.sombra{
+	background: #EEE;
+	border: 1px solid #999;
+	font-size: 12px;
+	font-weight: bold;
+	color: #045FB4;
+	font-family: "Arial";
+}
+.visible{
+	display: block;
+}
+.hidden{
+	display: none;
+}
+.a1{
+	width:140px;
+}
+.a1{
+	width:125px;
+}
+
+
+#login td, .tabla td{
+	
+}
+.titulo{
+	color: navy;
+	font-size: 14px;
+	height:85px;
+}
+.texto{
+	font-size: 12px;
+	font-weight: bold;
+	/*color: #045FB4;*/
+	color: Navy;
+	font-family: "Arial"
+}
+.texto .label{
+	display: inline-block;
+	width: 150px;
+}
+.mayuscula{
+	 text-transform: uppercase;
+	 font-size: 10px;
+}
+.TextoAzul
+{
+	color: Navy;
+	font-family: Trebuchet MS;
+	font-size: 11px;
+}
+.TextoAzul2
+{
+	color: Navy;
+	font-family: Trebuchet MS;
+	font-size: 11px;
+}
+.TextoEtiqueta
+{
+	color: Navy;
+	font-family: Trebuchet MS;
+	font-size: 11px;
+}
+.ValorEtiqueta
+{
+	color: black;
+	font-family: Trebuchet MS;
+	font-size: 11px;
+}
+.ValorEtiqueta1
+{
+	width:130px;
+	color: black;
+	font-family: Trebuchet MS;
+	font-size: 11px;
+}
+.TextoContrato
+{
+BACKGROUND-COLOR: #ffd637;
+	font-family: Trebuchet MS;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+td.sglsflLinks{
+	color: #000;
+	padding-left: 5px;
+	background: #EEE;
+	border: 1px solid #999;
+}
+td.sglsflLinks a, td.sglsflLinks a:VISITED{
+	font-family: "Arial";
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#menuForm table.rich-toolbar{
+	
+	color: white;
+	border: none;
+	border-spacing: 0;
+}
+/*
+#menuForm table.rich-toolbar span{
+	background-image: url(../imagenes/banner/fondocabecera.gif);
+	color: white;
+}
+*/
+/*
+#menuForm table.rich-toolbar span.rich-label-text-decor{
+	color: white;
+}
+*/
+.negritas{
+	font-weight: bolder;
+}
+
+#Pie
+{
+	background-image: url(../imagenes/banner/fondocabecera.gif);
+	height: 30px;
+	color: White;
+	vertical-align: middle;
+	font-size: 11px;
+	width: 100%;
+	text-align: center;
+}
+
+.btnAceptar {
+    background: url(../imagenes/iconos/btnAceptar.png) no-repeat;
+	width: 95px;
+	height: 19px;
+	border: none;
+	outline: none;
+	margin: 0px 13px 0px 15px;
+	cursor: pointer;
+}
+
+.btnCancelar {
+    background: url(../imagenes/iconos/btnCancelar.png) no-repeat;
+	width: 95px;
+	height: 19px;
+	border: none;
+	outline: none;
+	margin: 0px 0px 0px 0px;
+	cursor: pointer;
+}
+
+
+.btnBuscar{
+	background: url(../imagenes/iconos/btnBuscarNuevo.png) no-repeat;
+	width: 95px;
+	height: 19px;
+	border: none;
+	outline: none;
+	margin: 0px 0px 0px 0px;
+	cursor: pointer;
+}
+
+.messages{
+	font-family: Tahoma;
+	font-size: 11px;
+	color: red;
+	font-weight: bold;
+}
+/* Tabla */
+.tabla thead td,tr.rich-table-subheader th {
+	background: url(../imagenes/fondos/arg_fondo_cabecera_01.gif) repeat;
+	color: #FFF;
+	text-align: center;
+	font-size: 14px;
+}
+.tabla tbody td{
+	font-size: 10px;
+}
+
+
+
+
+.tabla tfoot td{
+	background-color: white;
+    font-size: 10px;
+}
+
+tr.rich-table-subfooter td{
+    font-size: 10px;
+    border: 0;
+}
+
+
+tr.rich-table-subfooter td[style]{
+	background-color: #ffd49b;
+    font-size: 10px;
+    border: 1;
+}
+
+
+tr.odd:HOVER, tr.even:HOVER{
+	background-color: #ffd49b;
+}
+.even:HOVER{
+	background-color: #ffd49b;
+
+}
+/* Menu */
+#gridMenu, ul.menu li div{
+/*BACKGROUND-COLOR: #4f81b1;*/
+
+}
+tr.menu td{
+	background: url(../imagenes/fondos/arg_fondo_cabecera_01.gif) repeat left center;
+}
+ul.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul.menu li{
+	position: relative;
+	float: left;
+	cursor: pointer;
+	display: inline;
+}
+ul.menu li ul /* Solo para los ul debajo de los li de primer nivel. */
+{
+   position:absolute;
+   left:-41px;
+   top:19px;
+   display:none;
+   list-style:none;
+}
+ul.menu li:hover > ul
+{
+   display:block;
+}
+
+ul.menu li a, ul.menu li span{
+	display: block;
+	border-left: 1px solid #CCC;
+	color: #FFF;
+	padding: 3px 10px;
+	text-decoration: none;
+}
+
+table.rich-dtascroller-table tr td{
+	background-image:none; 
+	color: #045FB4; 
+}
+
+table.tableLogin{
+	text-align: left;
+	margin-left: 4em;
+	margin-right: 4em;
+}
+table.tableLogin tr th{
+	text-align: center;
+}
+
+span.rich-label-text-decor{
+	color: white;
+}
+/*para el menu*/
+
+span.rich-label-text-decor:HOVER, div.rich-menu-item-enabled:HOVER,
+div.rich-ddmenu-label-select:HOVER, div.rich-menu-list-bg:HOVER
+{
+	color: black;
+}
+td.izquierda{
+	text-align: left;
+}
+td.derecha{
+	text-align: right;
+}
+div.rich-panel-header{
+	text-align: left;
+	color: navy;
+	font-family: "Arial";
+}
+.textoTabla{
+	font-family: Verdana,Arial,sans-serif;
+	color: #FFFF;
+	font-size: 10px;
+	text-align: center;
+}
+.etiqueta{
+text-align:left;
+width:130px;
+}
+.valor{
+text-align:right;
+width:100px;
+}
+.valorTexto{
+text-align:left;
+width:100px;
+}
+.espacio{
+width:100px;
+}
+.espa1{
+width:40px;
+}
+.etiqueta1{
+text-align:left;
+width:120px;
+}
+
+.EtiquetaImp{
+padding-top: 2px;
+padding-left: 4px;
+padding-right: 4px;
+font-weight: bold;
+font-size: 11px;
+font-family: Trebuchet MS, Tahoma, Verdana, Arial;
+BACKGROUND-COLOR:#FFFFBA;
+}
+.capturaNormal{
+	width:80px;
+	height:19px;
+	font-size: 11px;
+	font-family: Trebuchet MS, Tahoma, Verdana, Arial;
+}
+
+div.rich-panel-header{
+ background-color: #F3F4F9;
+}
+div.rich-panel{border: 1px #C9C9C9 solid;}
+th.rich-table-headercell{
+	background-color: white;
+	font-size: 14px;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+}
+.barraCL{
+background-color:#f3f4f9;
+text-align:left;
+}
+table#barMenu tbody tr td.rich-toolbar-item{padding-left: 0px;}
+.a10{
+width:7%;
+text-align:left;
+}
+.a30{
+width:30%;
+text-align:left;
+}
+.a60{
+width:63%;
+text-align:left;
+}
+.fondo{
+padding: 0px;
+margin: 0px;
+}
+
+
+.rich-tab-header{
+border-top: solid 1px;
+border-color:#c3c7c6;
+
+} 
+.rich-tabhdr-side-cell{
+border-top: solid 1px;
+border-color:#c3c7c6;
+}
+
+
+.rich-tab-inactive{
+border-color:#c3c7c6;
+background-image: url(../imagenes/fondos/fondo_pestana.gif);
+cursor: pointer;}
+
+.rich-tab-inactive:hover{
+border-top: solid 2px;
+border-top-color:#f7cf3d;
+background: url(/SGLConsultas/faces/a4j_3_1_4.GAimages/spacer.gif);
+cursor: pointer;}
+
+.rich-tab-active{
+border-top: solid 2px;
+border-top-color:#f7cf3d;
+background: url(/SGLConsultas/faces/a4j_3_1_4.GAimages/spacer.gif);
+}
+.rich-tabpanel-content {
+border-color:#c3c7c6;
+}
+.bordegris{
+border-color:#c3c7c6;
+}
+.rich-tabhdr-cell-inactive{
+border-color:red;
+}
+.IconoGIF{
+text-decoration:none;
+border:0;
+margin-right:3px;
+}
+.rich-toolbar{
+text-align:left;
+border-collapse:collapse; border: none;
+padding: 0;
+}
+.rich-toolbar-item{
+text-align:left;
+border-collapse:collapse; border: none;
+padding: 0px;
+padding-left:2px;
+padding-right:2px;
+}
+
+
+
+table.tablaListado thead tr,table.tablaListado tfoot tr{
+ font-size: 14px;
+ color: white;
+ font-weight: bold;
+ background-color: white;
+ border: 1px solid;border-color: #CCC;
+}
+
+table.tablaListado thead tr th.rich-table-subheadercell{
+ border-top: 1px solid #CCC;
+ border-left: 1px solid #CCC;
+ border-right: 1px solid #CCC;
+}
+table.tablaListado thead tr, table.tablaListado tfoot tr,table.tablaListado tfoot tr td.noBorde{
+ border-color:transparent;
+}
+table.tablaListado tfoot tr td.rich-table-footercell{
+ border-top: 1px solid #CCC;
+}
+table.tablaListado tbody{
+ BACKGROUND-COLOR: white;
+ border: 1px solid #CCC;
+}
+td.forcentrar{
+ width: 100%;
+ text-align: center;
+ padding-top: 0;
+ padding-left: 25px;
+ padding-right: 25px;
+}
+.negras{	
+	color: black;    
+    font-weight: bold;
+    text-align: left;
+    font-family:Verdana,sans-serif;
+    font-size:11px;
+ }
+ .titulo{
+ 	color: #003E7E;    
+    font-weight: bold;
+    text-align: left;
+    height: 13px; 
+    vertical-align: middle;
+    font-family:Verdana,sans-serif;
+    font-size:10px;
+ }
+
+ 
+ .etiquetaDatosNotariales{
+ text-align:left;
+	width:150px;
+}
+
+ .valorDatosNotariales{
+	width:250px;
+	text-align:left;
+}
+.graphicImage{
+text-decoration: none;
+margin-right:3px;
+border: 0px;
+align:left;
+}
+.noImprime{
+display: block;
+}
+.imprime{
+display: none;
+}
+.derechaCL{
+	text-align:right;
+}
+.izquierdaCL{
+	text-align:left;
+}
+@media print
+  {
+  
+ .noImprime, .btnBuscar {display: none;}
+ .imprime{display: block;} 
+  }
+ 

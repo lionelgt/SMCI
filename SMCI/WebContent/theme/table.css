@@ -1,0 +1,161 @@
+.rich-table {
+border-top: solid 1px #C0C0C0;
+border-left: solid 1px #C0C0C0;
+background-color: #FFF;
+empty-cells: show;
+border-collapse: collapse;
+}
+
+.dr-table-headercell {
+    border-bottom: 1px solid #2E5881;
+    border-right: 1px solid #2E5881;
+    
+}
+
+.dr-table-headercell{
+	color: black;
+}
+
+.dr-table-header{
+	background-image:none;
+}
+
+
+.textoCabeceraTabla{
+	color: white;
+    font-family: Arial,Verdana,sans-serif;
+    font-size: 12px;
+    padding: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.verticalAuto{
+    width:160px;
+   overflow-x: visible;
+   height:80px;
+    overflow-y: auto;
+    white-space:nowrap;
+}
+
+.textoPieTabla{
+	background:#FFFFBA;
+}
+
+.textoTabla2{
+	font-family: Verdana,Arial,sans-serif;
+	color: #FFFF;
+	font-size: 10px;
+	text-align: center;
+}
+
+.alineado{
+	text-align: right;
+}
+
+.footerTablePosicion{
+	background-color: #CCCCCC;
+	border:1px;
+	color:black;
+	border-color: #84807B;
+	border-style:solid; 
+	font-size: 10;
+	font-weight: bold;
+}
+
+.headerTable{
+	color: white; 
+	/*background-color: #376FA6;*/
+	background-image:url("../imagenes/fondos/header_table.gif");
+	font-weight:bold;
+	/*background-color:#D8D8D8;*/
+	border:1px;
+	border-color: 2E5881;
+	border-style:solid; 
+	font-size: 11;
+}
+
+.columnTableAzul{
+	text-align:right;
+	background-color: #ACBECE;
+	color: black; 
+	border:1px;
+	border-style:solid;
+	border-color: #84807B;   
+	font-size: 10
+}
+
+.columnTable{
+	color: black; 
+	border:1px;
+	border-style:solid;
+	border-color: #84807B;   
+	font-size: 10;
+}
+
+
+.columnTableNumber{
+	color: black; 
+	border:1px;
+	border-style:solid;
+	border-color: #84807B;   
+	font-size: 11;
+	text-align:right;
+}
+
+.columnHeader{
+	color: white; 
+	background-color: #376FA6;
+	font-weight:bold;
+	/*background-color:#D8D8D8;*/
+	border:1px;
+	border-color: 2E5881;
+	border-style:solid; 
+	font-size: 11;
+}
+
+.columnTableVerde{
+	text-align:right;
+	background-color: #BFDBB7;
+	color: black; 
+	border:1px;
+	border-style:solid;
+	border-color: #84807B;   
+	font-size: 10
+}
+
+.odd td{    
+	border:1px;
+	border-style:solid;
+	border-color: #84807B;  
+	padding:4px;
+}
+.odd{
+    background-color:white; 
+	border:1px;
+	border-style:solid;
+	border-color: #84807B;  
+}
+.even td{    
+	border:1px;
+	border-style:solid;
+	border-color: #84807B;  
+	padding:4px;
+}
+
+.even{
+    background-color:#ECF3FE; 
+	border:1px;
+	border-style:solid;
+	border-color: #84807B;  
+	
+}
+
+.active-row {         
+    background-color: #FFD49B;
+    cursor: pointer;
+}
+
+.calendarInput{
+font-size: 10;
+}

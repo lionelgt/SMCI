@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ch="http://sourceforge.net/projects/jsf-comp" version="2.1">
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type" />
+    <meta content="IBM Software Development Platform" name="GENERATOR" />
+    <meta content="text/css" http-equiv="Content-Style-Type" />
+    <meta content="no-cache" http-equiv="Cache-Control" />
+    <meta content="no-store" http-equiv="Cache-Control" />
+    <meta content="must-revalidate" http-equiv="Cache-Control" />
+    <meta content="no-cache" http-equiv="Pragma" />
+    <meta content="0" http-equiv="Expires" />
+    <link title="Style" href="theme/default.css" type="text/css" rel="stylesheet" />
+    <link title="Style" href="theme/table.css" type="text/css" rel="stylesheet" />
+    <link title="Style" href="theme/menu.css" type="text/css" rel="stylesheet" />
+    <link title="Style" href="theme/22estilo.css" type="text/css" rel="stylesheet" />
+    <link href="theme/estilo.css" rel="stylesheet" type="text/css" />
+    <title>CASOS PENDIENTES POR ANALISTA</title>
+  </head>
+  <body class="fondo">
+    <form enctype="application/x-www-form-urlencoded" class="form" action="#"
+
+      method="post" name="formPrincipal" id="formPrincipal">
+
+      <div style="text-align:center;">
+        <table cellspacing="0" cellpadding="0" border="0" align="center" style="width: 1300px;background-color:#FFFFFF;border: 1px solid #ACBECE;">
+          <tbody>
+            <tr>
+              <td valign="top" align="left" id="Cabecera"><a style="color:white; text-decoration: none;font-size: 11px"
+
+                  href="#">Pagina Inicio </a></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" style="background-color: #E8E8E8;">
+                <table width="100%" cellpadding="8" bgcolor="white">
+                  <tbody>
+                    <tr>
+                      <td align="left"><img src="imagenes/banner/BBVASistemaAdministracionActivos.png" />
+                      </td>
+                      <td align="right"><img src="imagenes/banner/bannerBBVA3TWO.png" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" id="formPrincipal:j_id13"
+
+                  class="rich-toolbar toolBar">
+                  <tbody>
+                    <tr valign="middle">
+                      <td style=";width:30%" class="rich-toolbar-item  textoTituloPagina"><span
+
+                          class="texto">Usuario: </span><span style="color:black">JUAN PEREZ SILVA</span></td>
+                      <td style=";width:60%; text-align:center" class="rich-toolbar-item  textoTituloPagina"><span
+
+                          class="texto">Fecha Sistema: </span><span style="color:black">27/05/2014</span></td>
+                      <td style=";width:20%" class="rich-toolbar-item  textoTituloPagina"><a 
+                          href="#" class="texto">Cerrar Sesión</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width="100%" cellspacing="0" cellpadding="4" border="0" id="formPrincipal:j_id26"
+
+                  class="rich-toolbar headerTable">
+                  <tbody>
+                    <tr valign="left">
+                      <td class="rich-toolbar-item " style="padding:4px"><div id="horizontalmenu">
+                        <ul>
+                          <li><a href="#">COMITE</a>
+                          <ul>
+                            <li><a href="contratos.html">Casos Pendientes</a></li>
+                          </ul>
+                           </li>
+                        </ul>
+                        <ul>
+                          <li><a href="#">CARGA</a>
+                            <ul>
+                              <li><a href="cambista.html">Cambistas</a></li>
+                              <li><a href="noticia.html">Noticias</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <ul>
+                          <li><a href="#">CONSULTA</a> </li>
+                        </ul>
+                      </div></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+            <tr>
+              <td>
+                <table width="100%" height="25" cellspacing="0" cellpadding="0"
+
+                  border="0" id="formPrincipal:j_id29" class="rich-toolbar toolBar">
+                  <tbody>
+                    <tr valign="middle">
+                      <td class="rich-toolbar-item  textoTituloPagina" style="padding:3px;">CASOS PENDIENTES POR ANALISTA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" align="right" style="background-color: White;padding:10px 10px"><div id="formPrincipal:pnlCriterios" class="rich-panel ">
+                <div id="formPrincipal:pnlCriterios_header" class="rich-panel-header cabeceraPanel">B&uacute;squeda</div>
+                <div id="formPrincipal:pnlCriterios_body" class="rich-panel-body ">
+                  <table width="100%" border="0" cellpadding="5">
+                      <tr>
+                        <td><table width="100%" border="0">
+                      <tr>
+                        <td width="4%" class="texto">Analista Caso:</td>
+                        <td width="12%" align="left">
+                          <select class="combo150" name="select" id="select">
+                            <option value="-1">TODOS</option>
+                            <option value="DY" selected>DENNIS YALLICO</option>
+                            <option value="FD">FERNANDO DIAZ</option>
+                            <option value="LS">LOURDES SOLIS</option>
+                            <option value="NP">NILO PALOMINO</option>
+                          </select>
+                          </td>
+                          <td align="left"><input name="button" type="button" class="btnBuscar" id="button" value=""></td>
+                      </tr>
+                      <tr>
+                        <td width="4%" class="texto">Numero Alerta:</td>
+                        <td width="12%"><input type="text" name="numAlerta"></td>
+                        <td width="8%" class="texto">Numero Caso:</td>
+                        <td width="10%"><input type="text" name="numCaso"></td>
+                        <td width="7%" class="texto">Involucrado:</td>
+                        <td width="23%"><input type="text" size="60" name="inv"></td>
+                         <td width="36%" align="left">
+                         <input name="button" type="button" class="btnBuscar" id="button" value=""></td>
+                      </tr>
+                        </table></td>
+                      </tr>
+                    </table>
+                    
+                  </div>
+                </div>
+                <img width="1" height="10px" src="/MBLWeb/a4j/g/3_3_3.Finalimages/spacer.gif.jsf"
+
+                  id="formPrincipal:j_id101" class="rich-spacer " alt="" />
+                  <div><img src="imagenes/iconos/excel.gif" width="16" height="16"> &nbsp;&nbsp;<img src="imagenes/iconos/pdf.png" width="16" height="16">&nbsp;&nbsp;</div>
+                <div id="formPrincipal:pnlContratoOk" class="rich-panel ">
+                  <div id="formPrincipal:pnlContratoOk_header" class="rich-panel-header cabeceraPanel">Resultado de B&uacute;squeda
+</div>
+                  <div id="formPrincipal:pnlContratoOk_body" class="rich-panel-body ">
+                    <div align="center" style="width:100%">
+                      <div style="width:1240px;">
+                      <img width="1" height="10px" src="/MBLWeb/a4j/g/3_3_3.Finalimages/spacer.gif.jsf"
+                      id="formPrincipal:j_id101" class="rich-spacer " alt="" />
+                        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+                          <tr>
+                            <td><table  width="98%" cellpadding="2" cellspacing="0" class="rich-table">
+                              <col width="62">
+                              <col width="58">
+                              <col width="42">
+                              <col width="43">
+                              <col width="65">
+                              <col width="48">
+                              <col width="37">
+                              <col width="58">
+                              <col width="44">
+                              <col width="39">
+                              <col width="85">
+                              <tr class="headerTable dr-table-header">
+                                <td width="76" class="headerTable">N&Uacute;MERO<br>ALERTA</td>
+                                <td width="76" class="headerTable">N&Uacute;MERO<br>CASO</td>
+                                <td width="82" class="headerTable">FECHA INICIO<br>ALERTA</td>
+                                <td width="78" class="headerTable">FECHA INICIO<br>CASO</td>
+                                <td width="288" class="headerTable">NOMBRE</td>
+                                <td width="56" class="headerTable">ROS</td>
+                                <td width="58" class="headerTable">CIERRE</td>
+                                <td width="59" class="headerTable">MARCA</td>
+                                <td width="94" class="headerTable">ACTIVIDAD<br>INUSUAL</td>
+                                <td width="83" class="headerTable">ANTIGUEDAD</td>
+                                <td width="55" class="headerTable">EDAD</td>
+                                <td width="88" class="headerTable">MONTO<br>ACUMULADO</td>
+                                <td width="68" class="headerTable">GUARDAR</td>
+                              </tr>
+                              <tr class="odd">
+                                <td>20140210724</td>
+                                <td>20140511910</td>
+                                <td>19/02/2014</td>
+                                <td>30/01/2014</td>
+                                <td>ANTHONY PALOMIO CORDOVA</td>
+                                <td>
+                        <select class="combo50" name="select2" id="select3">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                         </select></td>
+                                <td><select class="combo50" name="select12" id="select12">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select22" id="select22">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><a style="border: none;
+	outline: none;"><img style="border-style:none;" width="16" height="16" src="imagenes/iconos/editar.png" alt="Ver Detalle"></a></td>
+                              </tr>
+                              <tr class="even">
+                                <td>20140211027</td>
+                                <td><span class="celdafin">20140511709</span></td>
+                                <td>11/02/2014</td>
+                                <td>30/01/2014</td>
+                                <td>JEFFERSON VERGARA PEREZ</td>
+                                <td><select class="combo50" name="select3" id="select2">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select13" id="select13">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select23" id="select23">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><a style="border: none;
+	outline: none;"><img style="border-style:none;" width="16" height="16" src="imagenes/iconos/editar.png" alt="Ver Detalle"></a></td>
+                              </tr>
+                              <tr class="odd">
+                                <td>20140311529</td>
+                                <td>20140411224</td>
+                                <td>04/03/2014</td>
+                                <td>30/01/2014</td>
+                                <td>ANDY AEDO VALDES</td>
+                                <td><select class="combo50" name="select4" id="select4">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select14" id="select14">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select24" id="select24">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><a style="border: none;
+	outline: none;"><img style="border-style:none;" width="16" height="16" src="imagenes/iconos/editar.png" alt="Ver Detalle"></a></td>
+                              </tr>
+                              <tr class="even">
+                                <td>20140310712</td>
+                                <td>20140411012</td>
+                                <td>10/03/2014</td>
+                                <td>30/01/2014</td>
+                                <td>GIOMAR JARMALILLO SALAZAR</td>
+                                <td><select class="combo50" name="select5" id="select5">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select15" id="select15">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select25" id="select25">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><a style="border: none;
+	outline: none;" ><img style="border-style:none;" width="16" height="16" src="imagenes/iconos/editar.png" alt="Ver Detalle"></a></td>
+                              </tr>
+                              <tr class="odd">
+                                <td>20140310815</td>
+                                <td>20140410911</td>
+                                <td>10/03/2014</td>
+                                <td>30/01/2014</td>
+                                <td>EDUARDO PE&Ntilde;A VILCA</td>
+                                <td><select class="combo50" name="select6" id="select6">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select16" id="select16">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select26" id="select26">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><a style="border: none;
+	outline: none;" ><img style="border-style:none;" width="16" height="16" src="imagenes/iconos/editar.png" alt="Ver Detalle"></a></td>
+                              </tr>
+                              <tr class="even">
+                                <td>20140410911</td>
+                                <td>20140310815</td>
+                                <td>11/04/2014</td>
+                                <td>30/01/2014</td>
+                                <td>JANETH VILCA VERDE</td>
+                                <td><select class="combo50" name="select7" id="select7">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select17" id="select17">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select27" id="select27">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><a style="border: none;
+	outline: none;" ><img style="border-style:none;" width="16" height="16" src="imagenes/iconos/editar.png" alt="Ver Detalle"></a></td>
+                              </tr>
+                              <tr class="odd">
+                                <td>20140411012</td>
+                                <td>20140310712</td>
+                                <td>12/04/2014</td>
+                                <td>30/01/2014</td>
+                                <td>CORPAC S.A</td>
+                                <td><select class="combo50" name="select8" id="select8">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select18" id="select18">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select28" id="select28">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td width="68"><a style="border: none;
+	outline: none;" ><img style="border-style:none;" width="16" height="16" src="imagenes/iconos/editar.png" alt="Ver Detalle"></a></td>
+                              </tr>
+                              <tr class="even">
+                                <td>20140411224</td>
+                                <td>20140311529</td>
+                                <td>29/04/2014</td>
+                                <td>30/01/2014</td>
+                                <td>STARK INDUSTRY</td>
+                                <td><select class="combo50" name="select9" id="select9">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select19" id="select19">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select29" id="select29">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><a style="border: none;
+	outline: none;"><img style="border-style:none;" width="16" height="16" src="imagenes/iconos/editar.png" alt="Ver Detalle"></a></td>
+                              </tr>
+                              <tr class="odd">
+                                <td class="celdafin">20140511709</td>
+                                <td class="celdafin">20140211027</td>
+                                <td class="celdafin">09/05/2014</td>
+                                <td class="celdafin">30/01/2014</td>
+                                <td class="celdafin">COSAPIDATA S.A</td>
+                                <td class="celdafin"><select class="combo50" name="select10" id="select10">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td class="celdafin"><select class="combo50" name="select20" id="select20">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td class="celdafin"><select class="combo50" name="select30" id="select30">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td class="celdafin"><input type="text" name="numCaso"></td>
+                                <td class="celdafin"><input type="text" name="numCaso"></td>
+                                <td class="celdafin"><input type="text" name="numCaso"></td>
+                                <td class="celdafin"><input type="text" name="numCaso"></td>
+                                <td class="celdafin"><a style="border: none;
+	outline: none;"><img style="border-style:none;" width="16" height="16" src="imagenes/iconos/editar.png" alt="Ver Detalle"></a></td>
+                              </tr>
+                              <tr class="even">
+                                <td>20140511910</td>
+                                <td>20140210724</td>
+                                <td>10/05/2014</td>
+                                <td>30/01/2014</td>
+                                <td>REGISTER MANAGEMENT</td>
+                                <td><select class="combo50" name="select11" id="select11">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select21" id="select21">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><select class="combo50" name="select31" id="select31">
+                                  <option value="-1" selected></option>
+                                  <option value="S" >SI</option>
+                                  <option value="N">NO</option>
+                                </select></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><input type="text" name="numCaso"></td>
+                                <td><a style="border: none;
+	outline: none;"><img style="border-style:none;" width="16" height="16" src="imagenes/iconos/editar.png" alt="Ver Detalle"></a></td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                        <img width="1" height="10px" src="/MBLWeb/a4j/g/3_3_3.Finalimages/spacer.gif.jsf"
+                      id="formPrincipal:j_id101" class="rich-spacer " alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img width="1" height="10px" src="/MBLWeb/a4j/g/3_3_3.Finalimages/spacer.gif.jsf"
+
+                  id="formPrincipal:j_id210" class="rich-spacer " alt="" />
+
+              </td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" class="dr-pnl-h rich-panel-header"
+
+                style="font-size: 11px" id="Pie">..:: BBVA Banco Continental
+                ©Copyright -Todos los Derechos Reservados ::.. V.144 26/09/2013</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </form>
+
+  </body>
+</html>
