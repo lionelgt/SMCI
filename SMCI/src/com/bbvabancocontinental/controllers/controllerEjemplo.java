@@ -15,8 +15,7 @@ import com.bbvabancocontinental.model.modeloejemplo;
 @Controller
 @Scope("session")
 
-public class controllerEjemplo {
-	
+public class controllerEjemplo {	
 	public List<modeloejemplo> modeloejemplos;
 	
 	@PostConstruct
